@@ -52,7 +52,7 @@ function SkillCloud({ skillsList }) {
 
 export default function SkillSphere() {
   return (
-    <div style={{ width: "100%", height: "400px" }} data-hover="3d">
+    <div style={{ width: "100%", height: "400px", marginTop: "60px" }} data-hover="3d">
       <Canvas>
         <PerspectiveCamera makeDefault position={[0, 0, 15]} />
         <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.5} />

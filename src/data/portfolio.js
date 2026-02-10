@@ -94,6 +94,8 @@ export const certifications = [
   {
     title: "AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services",
+    period: "07/2022 – 08/2022",
+    description: "Gained expertise in AWS service models, pricing, and cloud databases.",
   },
 ];
 
@@ -102,5 +104,6 @@ export const navLinks = [
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
+  { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
