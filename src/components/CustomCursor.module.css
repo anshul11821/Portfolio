@@ -1,0 +1,30 @@
+.dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--text-muted);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transition: border-color var(--transition-fast), background-color var(--transition-medium);
+}
+
+@media (max-width: 1024px) {
+  .dot, .ring {
+    display: none;
+  }
+}

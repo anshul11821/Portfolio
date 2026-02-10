@@ -1,0 +1,25 @@
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.textSide p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.visualSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 968px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

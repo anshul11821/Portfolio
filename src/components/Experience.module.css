@@ -1,0 +1,107 @@
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.experienceItem {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 60px;
+}
+
+.experienceItem:last-child {
+  margin-bottom: 0;
+}
+
+.dot {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: var(--bg-primary);
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+}
+
+.card {
+  padding: 30px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-medium);
+}
+
+.card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-glow);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.role {
+  font-size: 1.4rem;
+  color: var(--text-heading);
+  margin-bottom: 4px;
+}
+
+.company {
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.period {
+  background: var(--bg-primary);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  border: 1px solid var(--border);
+}
+
+.list {
+  padding-left: 20px;
+}
+
+.listItem {
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.listItem::before {
+  content: '▸';
+  position: absolute;
+  left: -20px;
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+  }
+}
