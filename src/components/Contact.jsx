@@ -4,7 +4,7 @@ import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { personalInfo } from "@/data/portfolio";
-import { Mail, Phone, Linkedin, Send, CheckCircle, Loader2 } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Send, CheckCircle, Loader2 } from "lucide-react";
 import styles from "./Contact.module.css";
 
 export default function Contact() {
@@ -74,6 +74,9 @@ export default function Contact() {
               <div className={styles.socials}>
                 <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                   <Linkedin size={24} />
+                </a>
+                <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                  <Github size={24} />
                 </a>
               </div>
             </div>

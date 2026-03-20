@@ -4,8 +4,9 @@ export const personalInfo = {
   email: "anshulchutani37@gmail.com",
   phone: "+918708469017",
   linkedin: "https://www.linkedin.com/in/anshul-chutani-06625a214/",
+  github: "https://github.com/anshul11821",
   summary:
-    "Frontend Engineer with advanced expertise in React.js, JavaScript, and modern UI frameworks. Skilled in developing reusable components, implementing scalable user interfaces, optimizing performance, and integrating REST APIs. Proven experience collaborating across UX and backend teams to deliver robust, maintainable applications.",
+    "Frontend Developer with 2.5+ years of experience building performant React.js applications. Delivered a 35% render improvement and 25% load time reduction on a production engineering platform. Proficient in Redux, REST APIs, Socket.IO, and Three.js. Currently building agentic AI systems using LangChain and LangGraph, with hands-on experience integrating LLM-powered workflows into React frontends. AWS Certified Cloud Practitioner.",
 };
 
 export const experiences = [
@@ -15,37 +16,46 @@ export const experiences = [
     location: "Gurugram, Haryana",
     period: "Jan 2024 – Present",
     highlights: [
-      "Developed scalable React.js applications and modular UI components to enhance performance and maintainability.",
-      "Translated wireframes and design prototypes into high-quality code using React.js, JavaScript, Redux, HTML, and CSS.",
-      "Collaborated with UX and backend teams to integrate REST APIs and deliver seamless user experiences.",
-      "Maintained .NET MVC and .NET Web APIs for efficient backend processing and ensured accessibility across platforms.",
+      "Improved React.js rendering performance by 35% using lazy loading, React.memo, and useCallback to eliminate redundant re-renders across complex component trees.",
+      "Reduced page load time by 25% by memoizing expensive Three.js 3D computations with useMemo, improving responsiveness on data-heavy engineering views.",
+      "Architected a reusable component library with Redux state management, improving codebase maintainability by 30% and streamlining REST API integration.",
+      "Maintained .NET MVC and Web APIs to support scalable backend processing and ensure reliable data delivery to frontend consumers.",
     ],
   },
   {
-    role: "Front End Developer",
+    role: "Frontend Developer Intern",
     company: "Universal Technical Systems",
     location: "Gurugram, Haryana",
     period: "Jun 2023 – Dec 2023",
     highlights: [
-      "Built and maintained key features for user-facing interfaces, applying React.js and advanced JavaScript.",
-      "Created reusable component libraries for rapid development and improved scalability.",
-      "Enhanced cross-browser compatibility, accessibility, and API integration for dynamic applications.",
+      "Built and maintained user-facing features using React.js and JavaScript (ES6+); improved cross-browser compatibility and REST API integration across the platform.",
+      "Developed reusable component libraries to enforce consistent design patterns and reduce UI development time across the team.",
     ],
   },
 ];
 
 export const projects = [
   {
-    title: "Advanced Spring Design",
+    title: "Agentic Research Assistant",
     description:
-      "A React-based engineering tool for designing and simulating spring models with real-time data visualization, interactive 3D modeling, and optimized rendering performance.",
+      "A multi-step agentic AI system with stateful agent workflows, conditional branching, and a real-time React frontend displaying reasoning.",
     highlights: [
-      "Integrated Chart.js for real-time data visualization and Three.js for interactive 3D rendering.",
-      "Implemented real-time 3D modelling with Three.js to enhance visualization.",
-      "Improved performance using lazy loading, and optimized rendering.",
-      "Designed an intuitive UI with a DXF viewer for 2D visualizations.",
+      "Built a multi-step agentic AI system using LangGraph to define stateful agent workflows — each node handles a distinct task (search, summarize, validate) with conditional branching logic.",
+      "Used LangChain for tool integration, prompt chaining, and conversation memory, enabling the agent to maintain context across multi-turn research sessions.",
+      "Exposed the agent pipeline via a FastAPI backend and built a React.js frontend with streaming responses, allowing users to observe agent reasoning step-by-step in real time.",
     ],
-    tags: ["React", "Chart.js", "Three.js", "DXF-Viewer"],
+    tags: ["LangGraph", "LangChain", "React.js", "FastAPI", "OpenAI API"],
+    link: null,
+  },
+  {
+    title: "Advanced Spring Design Tool",
+    description:
+      "A browser-based engineering simulation tool with real-time 3D spring visualization, interactive analytics, and CAD drawing support.",
+    highlights: [
+      "Built a browser-based engineering simulation tool with real-time 3D spring visualization (Three.js), interactive analytics (Chart.js), and CAD drawing support via DXF-Viewer.",
+      "Designed a fully modular component architecture enabling extensibility for new spring types and parameter configurations without structural refactoring.",
+    ],
+    tags: ["React.js", "Three.js", "Chart.js", "DXF-Viewer", ".NET"],
     link: null,
   },
   {
@@ -75,19 +85,18 @@ export const projects = [
 ];
 
 export const skills = {
-  Frontend: ["React.js", "Next.js", "Redux", "HTML", "CSS", "JavaScript", "Bootstrap"],
-  "Backend & API": ["Node.js", ".NET Framework", "Express.js", "REST APIs"],
-  "Libraries & Tools": ["Monaco Editor", "Chart.js", "Three.js", "Webpack", "Git", "DXF-Viewer"],
-  Databases: ["MySQL", "MongoDB"],
-  "Cloud & DevOps": ["AWS"],
-  Learning: ["GenAI", "AI Agents", "LangChain"],
+  Frontend: ["React.js", "Next.js", "JavaScript (ES6+)", "Redux", "HTML5", "CSS3", "Bootstrap", "Tailwind CSS"],
+  "AI / Agents": ["LangChain", "LangGraph", "Agentic AI", "LLM APIs (OpenAI)", "RAG", "Prompt Engineering", "CrewAI"],
+  "Backend & APIs": ["Node.js", "Express.js", "FastAPI", ".NET MVC", "REST APIs", "Socket.IO"],
+  Visualization: ["Three.js", "Chart.js", "Monaco Editor", "DXF-Viewer"],
+  "Databases & Cloud": ["MySQL", "MongoDB", "AWS", "Git", "Docker", "Vercel"],
 };
 
 export const education = {
-  degree: "Bachelor of Technology",
-  university: "The Northcap University",
-  year: "May 2024",
-  gpa: "7.8/10",
+  degree: "Bachelor of Technology (CSE)",
+  university: "The NorthCap University",
+  year: "2020 - 2024",
+  gpa: "7.79/10",
 };
 
 export const certifications = [
