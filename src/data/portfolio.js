@@ -1,12 +1,12 @@
 export const personalInfo = {
   name: "Anshul Chutani",
-  title: "Frontend Engineer",
+  title: "Full Stack Developer | React.js · LangGraph · LangChain | Building AI-Powered Web Apps | AWS Certified",
   email: "anshulchutani37@gmail.com",
   phone: "+918708469017",
   linkedin: "https://www.linkedin.com/in/anshul-chutani-06625a214/",
   github: "https://github.com/anshul11821",
   summary:
-    "Frontend Developer with 2.5+ years of experience building performant React.js applications. Delivered a 35% render improvement and 25% load time reduction on a production engineering platform. Proficient in Redux, REST APIs, Socket.IO, and Three.js. Currently building agentic AI systems using LangChain and LangGraph, with hands-on experience integrating LLM-powered workflows into React frontends. AWS Certified Cloud Practitioner.",
+    "Full Stack Developer with 2.5+ years of experience building performant React.js applications. Delivered a 35% render improvement and 25% load time reduction on a production engineering platform. Proficient in Redux, REST APIs, Socket.IO, and Three.js. Currently building agentic AI systems using LangChain and LangGraph, with hands-on experience integrating LLM-powered workflows into React frontends. AWS Certified Cloud Practitioner.",
 };
 
 export const experiences = [

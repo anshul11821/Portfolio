@@ -1,17 +1,18 @@
 import Navbar from "@/components/Navbar";
 import CustomCursor from "@/components/CustomCursor";
+import ScrollProgress from "@/components/ScrollProgress";
 import "./globals.css";
 
 export const metadata = {
-  title: "Anshul Chutani | Frontend Engineer",
+  title: "Anshul Chutani | Full Stack Developer",
   description:
-    "Frontend Engineer with advanced expertise in React.js, JavaScript, and modern UI frameworks. Building scalable, performant, and beautiful web applications.",
-  keywords: ["Frontend Engineer", "React.js", "Next.js", "JavaScript", "Three.js", "Portfolio"],
+    "Full Stack Developer specializing in React.js, LangGraph, and AI agent integration. Building scalable, performant, and beautiful web applications.",
+  keywords: ["Full Stack Developer", "React.js", "LangGraph", "LangChain", "Node.js", "AI Agents"],
   authors: [{ name: "Anshul Chutani" }],
   openGraph: {
-    title: "Anshul Chutani | Frontend Engineer",
+    title: "Anshul Chutani | Full Stack Developer",
     description:
-      "Frontend Engineer with advanced expertise in React.js, JavaScript, and modern UI frameworks.",
+      "Full Stack Developer specializing in React.js, LangGraph, and AI agent integration.",
     type: "website",
   },
 };
@@ -20,9 +21,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <div className="noise-overlay" />
         <CustomCursor />
+        <ScrollProgress />
         {children}
       </body>
     </html>
   );
 }
+

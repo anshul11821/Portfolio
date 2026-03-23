@@ -1,0 +1,21 @@
+.wrapper {
+  display: inline-block;
+  position: relative;
+  min-width: 260px;
+  height: 1.2em;
+  vertical-align: bottom;
+  overflow: visible;
+}
+
+.word {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  white-space: nowrap;
+  background: var(--accent-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  will-change: transform, opacity, filter;
+}

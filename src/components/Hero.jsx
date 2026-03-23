@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { personalInfo } from "@/data/portfolio";
 import HeroScene from "./3d/HeroScene";
+import TextRotator from "./TextRotator";
+import MagneticButton from "./MagneticButton";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -35,7 +37,8 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className={styles.title}
         >
-          I build things for the web.
+          I'm a{" "}
+          <TextRotator />
         </motion.h2>
         
         <motion.p 
@@ -53,29 +56,25 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className={styles.ctas}
         >
-          <motion.button 
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <MagneticButton
             className={styles.primaryBtn} 
             onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
           >
             View My Work
-          </motion.button>
-          <motion.button 
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          </MagneticButton>
+          <MagneticButton
             className={styles.secondaryBtn} 
             onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
           >
             Get In Touch
-          </motion.button>
+          </MagneticButton>
         </motion.div>
       </div>
 
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
+        transition={{ delay: 1.2, duration: 1 }}
         className={styles.scrollIndicator}
       >
         <div className={styles.mouse}>

@@ -1,49 +1,90 @@
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  gap: 24px;
+  margin-bottom: 0;
 }
 
 .category {
-  background: var(--bg-secondary);
+  background: var(--bg-glass);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 25px;
-  transition: all var(--transition-fast);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  transition: all var(--transition-medium);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
+}
+
+.category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent-gradient);
+  opacity: 0;
+  transition: opacity var(--transition-medium);
+}
+
+.category:hover::before {
+  opacity: 1;
 }
 
 .category:hover {
-  border-color: var(--accent);
-  box-shadow: var(--shadow-glow);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-glow), var(--shadow-card);
+  transform: translateY(-4px);
+  background: var(--bg-glass-hover);
 }
 
 .categoryTitle {
-  font-size: 1.1rem;
-  color: var(--accent);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-muted);
   margin-bottom: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.categoryTitle::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: var(--accent-gradient);
+  border-radius: 1px;
 }
 
 .skillsGrid {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
 .skillItem {
-  background: var(--bg-tertiary);
-  padding: 8px 16px;
-  border-radius: var(--radius-sm);
-  font-size: 0.9rem;
+  background: var(--bg-glass-light);
+  padding: 7px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
   color: var(--text-secondary);
   border: 1px solid var(--border);
   transition: all var(--transition-fast);
+  cursor: default;
+  font-weight: 500;
 }
 
 .skillItem:hover {
-  color: var(--text-primary);
-  border-color: var(--accent);
-  background: var(--bg-glass-light);
+  color: var(--text-heading);
+  border-color: var(--border-hover);
+  background: rgba(56, 189, 248, 0.08);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.15);
+  transform: translateY(-2px) scale(1.02);
 }
