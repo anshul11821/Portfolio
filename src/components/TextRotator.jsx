@@ -9,7 +9,6 @@ const roles = [
   "React.js Specialist",
   "AI & Agents Engineer",
   "LangChain Expert",
-  "Cloud Solutions Architect",
 ];
 
 export default function TextRotator() {
